@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <script src="javascript/jquery-2.2.1.min.js"></script>
+  <script src="javascript/jquery-progresspiesvg-min.js"></script>
+  <script src="javascript/packaging.js"></script>
+  <script src="javascript/utils.js"></script>
+  <script src="javascript/observer.js"></script>
+  <script src="javascript/observable.js"></script>
+  <script src="javascript/field.js"></script>
+  <script src="javascript/model.js"></script>
+  <script src="javascript/viewGraphic.js"></script>
+  <script src="javascript/controller.js"></script>
+  <script src="javascript/main.js"></script>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="containerV" id="mainContainerGlobal">
+    <div class="containerH" id="buttonsContainer">
+      <button id="gameButton">Jeux</button>
+      <button id="scoreButton">Score</button>
+    </div>
+    <div class="containerV" id="scoreContainer">
+      <div class="displayTable" id="scoreTable" >
+      </div>
+    </div>
+
+    <div class="containerV" id="mainContainer">
+      <div class="containerH" id="header">
+        <div class="containerH">
+          <div id="labelHarvest">X</div>
+          <div>recoltes</div>
+        </div>
+        <div class="containerH">
+          <div id="labelTank">X</div>
+          <div>L</div>
+        </div>
+        <div class="containerH">
+          <div id="labelCash">X</div>
+          <div>$</div>
+        </div>
+        <div class="containerH">
+          <div class="containerV">
+            <div class="containerH">
+              <input type="text" id="playerName" />
+              <button id="goButton">GO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containerH" id="fields">
+        <div class="field containerV">
+          <button id="buttonwater1">irriguer</button>
+          <div class="containerH">
+            <div id="labelTanck1">X</div>
+            <div>L</div>
+          </div>
+          <div class="containerH">
+            <span class="pp" data-val="0" id="fieldState1"></span>
+          </div>
+          <button id="buttonharvest1">recolter</button>
+        </div>
+        <div class="field containerV">
+          <button id="buttonwater2">irriguer</button>
+          <div class="containerH">
+            <div id="labelTanck2" class="labelTanck">X</div>
+            <div>L</div>
+          </div>
+          <div class="containerH">
+            <span class="pp" data-val="0" id="fieldState2"></span>
+          </div>
+
+          <button id="buttonharvest2">recolter</button>
+        </div>
+        <div class="field containerV">
+          <button id="buttonwater3">irriguer</button>
+          <div class="containerH">
+            <div id="labelTanck3" class="labelTanck">X</div>
+            <div>L</div>
+          </div>
+          <div class="containerH">
+            <span class="pp" data-val="0" id="fieldState3"></span>
+          </div>
+
+          <button id="buttonharvest3">recolter</button>
+        </div>
+      </div>
+      <div class="containerH">
+        <div>
+          <input type="number" id="inputBuy" />
+        </div>
+        <div>
+          <button id="buttonBuy">acheter de l'eau</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
