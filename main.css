@@ -1,0 +1,79 @@
+
+/*required to bypass user agent css*/
+input{
+  font-size: inherit ;
+}
+button{
+  font-size: inherit ;
+}
+
+div{
+  margin: 5px;
+}
+
+#mainContainerGlobal{
+  /*height:100%;*/
+  font-size: 3em;
+}
+
+#header>div{
+  margin:10px;
+  padding :20px;
+
+}
+
+#fields>div{
+  margin:10px;
+  padding :20px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: thin;
+}
+
+#inputBuy{
+  width: 3em;
+  text-align: right;
+}
+#playerName{
+  width: 8em;
+}
+
+.containerH{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.containerH>div{
+  align-self : center;
+}
+.containerV{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.displayTable{
+  display: table;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+}
+.displayRow{
+  display: table-row;
+}
+.displayCell{
+  display: table-cell;
+  padding: 5px;
+}
+
+.ready{
+  background-color: green;
+}
+
+.notReady{
+  background-color: red;
+}
+
+#buttonsContainer{
+flex-basis: 100px;
+}
