@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://172.16.28.144:8080/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div id="mainContainer">
+  </div>
+</body>
+<script>
+var socket = io('http://172.16.28.144:8080');
+socket.on('newScore', function(data,callBackServer) {
+  console.log('WebSocket recu',data);
+  console.log(callBackServer);
+  callBackServer();
+});
+
+$.ajax({
+  url: "http://172.16.28.144:8080/data/score",
+  type: 'post',
+  contentType: 'application/json; charset=utf-8',
+  data: JSON.stringify({
+    player: 'sdf',
+    score: 4
+  })
+}).done(function(datas) {
+  console.log('POST terminé',datas)
+}.bind(this));
+
+</script>
+
+</html>
